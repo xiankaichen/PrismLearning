@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NavigationView
+namespace NavigationView.Views
 {
     /// <summary>
     /// ViewB.xaml 的交互逻辑

@@ -43,18 +43,24 @@ namespace NavigationView.ViewModels
 
         public void OnOpenViewA()
         {
+            NavigationParameters parameters = new NavigationParameters();
+            string datetime = DateTime.Now.ToString();
+            parameters.Add("message", datetime + " 传递了参数到页面A");
             _regionManager.RequestNavigate("ContentRegionNavigation", "ViewA", arg =>
             {
                 _journal = arg.Context.NavigationService.Journal;
-            });
+            }, parameters);
         }
 
         public void OnOpenViewB()
         {
+            NavigationParameters parameters = new NavigationParameters();
+            string datetime = DateTime.Now.ToString();
+            parameters.Add("message", datetime + " 传递了参数到页面B");
             _regionManager.RequestNavigate("ContentRegionNavigation", "ViewB", arg =>
             {
                 _journal = arg.Context.NavigationService.Journal;
-            });
+            },parameters);
         }
 
         public void OnOpenPrev()
