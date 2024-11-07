@@ -9,7 +9,6 @@
 2. Region的激活
 3. Region的导航
 演示效果图如下所示：
-image = data/RegionDemo.png
 ![Region Demo](data/RegionDemo.png "The Region Demo")
 
 ## 项目ModulesCatalog
@@ -18,9 +17,16 @@ image = data/RegionDemo.png
 2. 模块的初始化
 3. 模块的卸载
 
+
+演示效果图如下所示：
+![Region Demo](data/ModulesCatalog.png "The ModulesCatalog Demo")
+
 ## 项目Navigation
 这个项目主要用于学习Prism的导航。主要包含了以下内容：
 1. 导航的基本使用
 2. 导航的传参
 3. 对话框服务的使用
+
+演示效果图如下所示：
+![Region Demo](data/Navigation.png "The Navigation Demo")
 
