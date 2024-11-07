@@ -17,9 +17,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleB", "02ModuleCatalog\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03Navigation", "03Navigation", "{4EBFF2AD-35FA-4D03-990B-1216AC6B9A99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationApp", "03Navigation\NavigationApp\NavigationApp.csproj", "{DA4C4179-1344-4AB8-B022-BA80A0E326C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigationApp", "03Navigation\NavigationApp\NavigationApp.csproj", "{DA4C4179-1344-4AB8-B022-BA80A0E326C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationView", "03Navigation\NavigationView\NavigationView.csproj", "{D1479A85-E430-4A1D-8095-9655A22B42C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigationView", "03Navigation\NavigationView\NavigationView.csproj", "{D1479A85-E430-4A1D-8095-9655A22B42C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{651450B0-8742-4943-9089-425BA8AD9D5B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
