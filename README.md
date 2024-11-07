@@ -19,7 +19,7 @@
 
 
 演示效果图如下所示：
-![ModulesCatalog Demo](data/ModulesCatalog.png "The ModulesCatalog Demo")
+![ModulesCatalog Demo](data/ModulesCatalogDemo.png "The ModulesCatalog Demo")
 
 ## 项目Navigation
 这个项目主要用于学习Prism的导航。主要包含了以下内容：
@@ -28,5 +28,5 @@
 3. 对话框服务的使用
 
 演示效果图如下所示：
-![Navigation Demo](data/Navigation.png "The Navigation Demo")
+![Navigation Demo](data/NavigationDemo.png "The Navigation Demo")
 
