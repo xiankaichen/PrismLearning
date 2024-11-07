@@ -12,16 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Prism.Regions;
 
 namespace NavigationView.Views
 {
     /// <summary>
-    /// ViewA.xaml 的交互逻辑
+    /// MsgDialog.xaml 的交互逻辑
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class MsgDialog : UserControl
     {
-        public ViewA()
+        public MsgDialog()
         {
             InitializeComponent();
         }

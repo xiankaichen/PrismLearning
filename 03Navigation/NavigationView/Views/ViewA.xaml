@@ -6,7 +6,25 @@
              xmlns:local="clr-namespace:NavigationView.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Aqua">
-        <TextBlock Text="{Binding Title}"  FontSize="24"></TextBlock>
+    <Grid Background="#FF7B9CA7">
+        <StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button Content="打开对话框（传入参数,关闭后获取参数）" 
+                        HorizontalAlignment="Left"
+                        Command="{Binding OpenDialogCommand}" Width="243" Margin="36,16,0,12" Height="38"></Button>
+            </StackPanel>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="输入对话框参数："></Label>
+                    <TextBox x:Name="textBoxInParam" Text="{Binding InParam}"  TextWrapping="Wrap" Width="556"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="对话框输出结果："></Label>
+                    <TextBox x:Name="textBoxOutParam" TextWrapping="Wrap" Text="{Binding OutParam}" Width="557"/>
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </UserControl>

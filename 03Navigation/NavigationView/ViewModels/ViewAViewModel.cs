@@ -5,8 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
+using Prism.Services.Dialogs;
 
 namespace NavigationView.ViewModels
 {
@@ -19,6 +21,36 @@ namespace NavigationView.ViewModels
             set { title = value;
                 RaisePropertyChanged();
             }
+        }
+
+        private string _inparam = "传入给对话框的参数：10，20，30";
+        public string InParam
+        {
+            get { return _inparam; }
+            set
+            {
+                _inparam = value;
+                RaisePropertyChanged();
+            }
+        }
+        private string _outparam;
+        public string OutParam
+        {
+            get { return _outparam; }
+            set
+            {
+                _outparam = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public IDialogService _dialogService;
+        public DelegateCommand OpenDialogCommand { get; private set; }
+
+        public ViewAViewModel(IDialogService dialogService)
+        {
+            _dialogService = dialogService;
+            OpenDialogCommand = new DelegateCommand(OnOpenDialogCommand);
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
@@ -34,6 +66,20 @@ namespace NavigationView.ViewModels
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
             Title = navigationContext.Parameters["message"].ToString();
+        }
+
+        public void OnOpenDialogCommand()
+        {
+            DialogParameters param = new DialogParameters();
+            param.Add("message", InParam);
+            _dialogService.ShowDialog("MsgDialog", param, r =>
+            {
+                if (r.Result == ButtonResult.OK)
+                {
+                    var result = r.Parameters.GetValue<string>("result");
+                    OutParam = result;
+                }
+            });
         }
     }
 }

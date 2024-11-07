@@ -13,13 +13,13 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <Grid Row="0">
             <StackPanel  Orientation="Horizontal" >
-                <Button Content="上一页" Command="{Binding OpenPrevCommand}" Width="60" Margin="0,0,10,0"></Button>
-                <Button Content="下一页" Command="{Binding OpenNextCommand}" Width="60" Margin="0,0,10,0"></Button>
-                <Button Content="打开页面A" Command="{Binding OpenViewACommand}" Width="60" Margin="0,0,10,0"></Button>
-                <Button Content="打开页面B" Command="{Binding OpenViewBCommand}" Width="60"></Button>
+                <Button Content="上一页" Command="{Binding OpenPrevCommand}" Width="60" Margin="11,0,10,0" FontWeight="Bold" Height="38"></Button>
+                <Button Content="下一页" Command="{Binding OpenNextCommand}" Width="60" Margin="0,0,10,0" FontWeight="Bold" Height="38"></Button>
+                <Button Content="打开页面A" Command="{Binding OpenViewACommand}" Width="60" Margin="0,0,10,0" FontWeight="Bold" Height="38"></Button>
+                <Button Content="打开页面B" Command="{Binding OpenViewBCommand}" Width="62" FontWeight="Bold" Height="38"></Button>
             </StackPanel>
         </Grid>
         <Grid Row="1" Background="Bisque">

@@ -1,4 +1,5 @@
-﻿using NavigationView.Views;
+﻿using NavigationView.ViewModels;
+using NavigationView.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
@@ -18,6 +19,8 @@ namespace NavigationView
         {
             containerRegistry.RegisterForNavigation<ViewA>("PageA");
             containerRegistry.RegisterForNavigation<ViewB>("PageB");
+
+            containerRegistry.RegisterDialog<MsgDialog, MsgDialogViewModel>();
         }
 
     }
