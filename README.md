@@ -8,6 +8,9 @@
 1. Region的基本使用
 2. Region的激活
 3. Region的导航
+演示效果图如下所示：
+image = data/RegionDemo.png
+![Region Demo](data/RegionDemo.png "The Region Demo")
 
 ## 项目ModulesCatalog
 这个项目主要用于学习Prism的模块化开发。主要包含了以下内容：
