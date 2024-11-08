@@ -1,7 +1,7 @@
 # PrismLearning
 
 ## 简介
-这是一个Prism的学乯项目，主要用于学习Prism的使用。共包含的三个项目，分别是PrismRegion、ModulesCatalog、Navigation。
+这是一个Prism的学乯项目，主要用于学习Prism的使用。共包含项目，分别是PrismRegion、ModulesCatalog、Navigation、NlogSeq。
 
 ## 项目PrismRegion
 这个项目主要用于学习Prism的Region的使用。主要包含了以下内容：
@@ -30,3 +30,10 @@
 演示效果图如下所示：
 ![Navigation Demo](data/NavigationDemo.png "The Navigation Demo")
 
+## 项目NlogSeqDemo
+这个项目主要用于学习Nlog和Seq的使用。主要包含了以下内容：
+1. Nlog的基本使用
+2. Seq的基本使用
+
+演示效果图如下所示：
+![NlogSeqDemo Demo](data/NlogSeqDemo.png "The NlogSeqDemo Demo")
