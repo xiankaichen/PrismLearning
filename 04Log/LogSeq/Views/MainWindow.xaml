@@ -3,8 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         Title="{Binding Title}" Height="350" Width="525" >
     <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Row="0" >
+            <StackPanel >
+                <Button Content="写入日志" Click="Button_Click" Width="100"></Button>
+
+            </StackPanel>
+        </Grid>
+        <Grid Row="1">
+
+            <wv2:WebView2 Name="webView"
+                          Source="http://localhost:5341/#/events?range=1d"
+            />
+        </Grid>
+
     </Grid>
 </Window>
