@@ -1,0 +1,25 @@
+﻿<Window x:Class="DependencyPropertyApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:local="clr-namespace:DependencyPropertyApp.ViewModels"
+        xmlns:dependencyPropertyApp="clr-namespace:DependencyPropertyApp.ViewModels"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525" >
+    <Grid>
+        <!-- Password Input -->
+        <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+            <Label Content="UserName（用户）:" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+            <TextBox Text="{Binding UserName}" Width="300" HorizontalAlignment="Left"></TextBox>
+            <Label Content="Password(密文）" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+            <PasswordBox Width="300" HorizontalAlignment="Left"
+                         dependencyPropertyApp:PasswordBoxHelper.Attach="True"
+                         dependencyPropertyApp:PasswordBoxHelper.Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         
+            />
+            <Label Content="Password(明文）" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+            <TextBox Text="{Binding Password}" Width="300" HorizontalAlignment="Left"></TextBox>
+        </StackPanel>
+
+    </Grid>
+</Window>

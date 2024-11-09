@@ -1,4 +1,6 @@
-﻿using Prism.Mvvm;
+﻿using System.Windows;
+using System.Windows.Controls;
+using Prism.Mvvm;
 
 namespace LogSeq.ViewModels
 {
@@ -11,9 +13,14 @@ namespace LogSeq.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+
+
+
         public MainWindowViewModel()
         {
 
         }
     }
+
+
 }
